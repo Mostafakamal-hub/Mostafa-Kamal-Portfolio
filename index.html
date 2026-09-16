@@ -5,14 +5,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mostafa Kamal | AI Content Creator & Visual Storyteller</title>
+<title>Mostafa Kamal | AI Content Creator</title>
 
-<meta name="description" content="Mostafa Kamal — AI Content Creator, Visual Storyteller, Scriptwriter and Commercial Video Creator.">
+<meta name="description" content="Mostafa Kamal — AI Content Creator, Visual Storyteller and Cinematic Commercial Video Creator.">
 
 <style>
-/* =========================
-   GLOBAL
-========================= */
 
 * {
     margin: 0;
@@ -27,7 +24,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #090909;
-    color: #f5f5f5;
+    color: #ffffff;
     line-height: 1.7;
 }
 
@@ -41,17 +38,9 @@ img {
     display: block;
 }
 
-:root {
-    --black: #090909;
-    --dark: #111111;
-    --gold: #dca85f;
-    --white: #f5f5f5;
-    --muted: #a5a5a5;
-    --border: #292929;
-}
-
 .container {
-    width: min(1420px, 90%);
+    width: 90%;
+    max-width: 1450px;
     margin: auto;
 }
 
@@ -61,39 +50,40 @@ img {
 
 nav {
     height: 82px;
+    border-bottom: 1px solid #292929;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 8%;
-    border-bottom: 1px solid var(--border);
+    justify-content: space-between;
+    padding: 0 7.5%;
+    position: relative;
+    z-index: 10;
     background: #090909;
 }
 
 .logo {
-    font-size: 21px;
+    font-size: 22px;
     font-weight: 800;
-    letter-spacing: 3px;
-    color: white;
+    letter-spacing: 4px;
 }
 
 .logo span {
-    color: var(--gold);
+    color: #e1ae63;
 }
 
 .nav-links {
     display: flex;
-    gap: 35px;
+    gap: 36px;
     list-style: none;
 }
 
 .nav-links a {
     font-size: 13px;
-    color: #d5d5d5;
+    color: #dddddd;
     transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: var(--gold);
+    color: #e1ae63;
 }
 
 /* =========================
@@ -104,167 +94,139 @@ nav {
     min-height: calc(100vh - 82px);
     display: flex;
     align-items: center;
-    position: relative;
+    padding: 70px 0 90px;
     overflow: hidden;
-    padding: 70px 0;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    right: -200px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: radial-gradient(
-        circle,
-        rgba(220,168,95,0.09),
-        transparent 70%
-    );
-    pointer-events: none;
 }
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: 1.05fr 0.95fr;
     align-items: center;
-    gap: 50px;
+    gap: 70px;
 }
 
-/* LEFT CONTENT */
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-.eyebrow {
-    color: var(--gold);
-    font-size: 13px;
+.hero-label {
+    color: #e1ae63;
+    font-size: 12px;
     letter-spacing: 4px;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
 }
 
 .hero h1 {
-    font-size: clamp(48px, 5.4vw, 88px);
-    line-height: 1.04;
+    font-size: clamp(42px, 5.2vw, 88px);
+    line-height: 1.05;
     font-weight: 800;
-    letter-spacing: -2px;
+    letter-spacing: -3px;
     text-transform: uppercase;
-    margin-bottom: 32px;
 }
 
 .hero h1 span {
-    color: var(--gold);
+    color: #e1ae63;
 }
 
 .hero-description {
+    margin-top: 32px;
     color: #bdbdbd;
     font-size: 16px;
-    max-width: 590px;
-    margin-bottom: 38px;
+    max-width: 570px;
+    line-height: 1.9;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 15px;
+    gap: 14px;
+    margin-top: 35px;
     flex-wrap: wrap;
 }
 
 .btn {
     display: inline-block;
-    padding: 16px 27px;
+    padding: 15px 25px;
     font-size: 13px;
     font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid #e1ae63;
     transition: 0.3s;
 }
 
 .btn-primary {
-    background: var(--gold);
-    color: #111;
+    background: #e1ae63;
+    color: #111111;
 }
 
 .btn-primary:hover {
-    background: #f0c783;
-    transform: translateY(-3px);
+    background: #ffffff;
+    border-color: #ffffff;
 }
 
 .btn-outline {
-    border: 1px solid #555;
-    color: white;
+    border-color: #444444;
+    color: #ffffff;
 }
 
 .btn-outline:hover {
-    border-color: var(--gold);
-    color: var(--gold);
+    border-color: #e1ae63;
+    color: #e1ae63;
 }
 
-/* RIGHT PORTRAIT */
+/* =========================
+   HERO PORTRAIT
+========================= */
 
-.hero-portrait {
+.hero-visual {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 520px;
+    min-height: 540px;
 }
 
 .portrait-frame {
-    width: min(100%, 470px);
     position: relative;
-    z-index: 1;
+    width: min(100%, 470px);
+    z-index: 2;
 }
-
-/* Gold frame accent */
 
 .portrait-frame::before {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 1px solid rgba(220,168,95,0.65);
-    top: 22px;
-    left: 22px;
+    inset: 20px -20px -20px 20px;
+    border: 1px solid #9b7139;
     z-index: -1;
 }
 
-/* Portrait image */
-
 .portrait-frame img {
     width: 100%;
-    aspect-ratio: 4 / 5;
+    height: 540px;
     object-fit: cover;
-    object-position: center;
+    object-position: center top;
     background: #151515;
     filter: contrast(1.04);
 }
 
-/* Small caption */
-
-.portrait-caption {
+.portrait-tag {
     position: absolute;
-    bottom: 15px;
-    left: -20px;
-    background: #111;
-    border: 1px solid var(--border);
-    padding: 12px 18px;
-    z-index: 2;
+    left: -85px;
+    bottom: 35px;
+    background: #111111;
+    border: 1px solid #303030;
+    padding: 17px 20px;
+    z-index: 4;
+    min-width: 220px;
 }
 
-.portrait-caption strong {
+.portrait-tag strong {
     display: block;
+    color: #e1ae63;
     font-size: 12px;
     letter-spacing: 2px;
-    color: var(--gold);
+    margin-bottom: 4px;
 }
 
-.portrait-caption small {
+.portrait-tag small {
     font-size: 11px;
-    color: #aaa;
+    color: #c9c9c9;
 }
 
 /* =========================
@@ -272,28 +234,33 @@ nav {
 ========================= */
 
 section {
-    padding: 110px 0;
-    border-top: 1px solid var(--border);
+    padding: 105px 0;
+    border-top: 1px solid #202020;
 }
 
 .section-label {
-    color: var(--gold);
+    color: #e1ae63;
     font-size: 12px;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 
 .section-title {
-    font-size: clamp(32px, 4vw, 58px);
+    font-size: clamp(32px, 4vw, 60px);
     line-height: 1.1;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    letter-spacing: -1.5px;
 }
 
-.section-description {
-    color: var(--muted);
+.section-title span {
+    color: #e1ae63;
+}
+
+.section-intro {
+    color: #999999;
     max-width: 650px;
+    margin-top: 22px;
 }
 
 /* =========================
@@ -303,136 +270,159 @@ section {
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 70px;
-    align-items: center;
+    gap: 80px;
+    align-items: start;
 }
 
 .about-text p {
     color: #bdbdbd;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
-.about-facts {
-    border-left: 1px solid var(--gold);
-    padding-left: 30px;
+.about-details {
+    border-left: 1px solid #333333;
+    padding-left: 35px;
 }
 
-.fact {
+.detail {
     margin-bottom: 28px;
 }
 
-.fact h3 {
-    color: var(--gold);
-    font-size: 13px;
+.detail h4 {
+    color: #e1ae63;
+    font-size: 12px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
-.fact p {
-    color: #bbb;
-}
-
-/* =========================
-   SERVICES
-========================= */
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 50px;
-}
-
-.service-card {
-    background: #111;
-    border: 1px solid var(--border);
-    padding: 35px;
-    transition: 0.3s;
-}
-
-.service-card:hover {
-    border-color: var(--gold);
-    transform: translateY(-5px);
-}
-
-.service-number {
-    color: var(--gold);
-    font-size: 13px;
-    letter-spacing: 2px;
-}
-
-.service-card h3 {
-    font-size: 23px;
-    margin: 18px 0 12px;
-}
-
-.service-card p {
-    color: var(--muted);
-    font-size: 14px;
+.detail p {
+    color: #cccccc;
 }
 
 /* =========================
-   WORK
+   WORK / SERVICES
 ========================= */
 
 .work-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 50px;
+    gap: 22px;
+    margin-top: 55px;
 }
 
 .work-card {
-    min-height: 250px;
-    padding: 35px;
-    background: linear-gradient(135deg, #171717, #0d0d0d);
-    border: 1px solid var(--border);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    min-height: 260px;
+    padding: 38px;
+    border: 1px solid #292929;
+    background: #101010;
     transition: 0.3s;
 }
 
 .work-card:hover {
-    border-color: var(--gold);
+    border-color: #e1ae63;
+    transform: translateY(-5px);
 }
 
-.work-card span {
-    color: var(--gold);
-    font-size: 12px;
-    letter-spacing: 3px;
-    margin-bottom: 12px;
+.work-number {
+    color: #e1ae63;
+    font-size: 13px;
+    letter-spacing: 2px;
 }
 
 .work-card h3 {
-    font-size: 26px;
-    margin-bottom: 10px;
+    font-size: 25px;
+    margin-top: 35px;
+    text-transform: uppercase;
+    line-height: 1.25;
 }
 
 .work-card p {
-    color: var(--muted);
+    color: #999999;
+    margin-top: 14px;
     font-size: 14px;
+}
+
+/* =========================
+   PROCESS
+========================= */
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 55px;
+}
+
+.process-card {
+    padding: 30px 22px;
+    border-top: 1px solid #e1ae63;
+    background: #101010;
+}
+
+.process-card span {
+    color: #e1ae63;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.process-card h3 {
+    margin-top: 22px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.process-card p {
+    color: #999999;
+    font-size: 13px;
+    margin-top: 12px;
 }
 
 /* =========================
    CONTACT
 ========================= */
 
-.contact {
-    text-align: center;
+.contact-section {
+    background: #0d0d0d;
 }
 
-.contact .section-description {
-    margin: 0 auto 35px;
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
 }
 
-.contact-email {
-    font-size: clamp(20px, 3vw, 35px);
-    color: var(--gold);
+.contact-text p {
+    color: #aaaaaa;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+.contact-links {
+    border-left: 1px solid #333333;
+    padding-left: 35px;
+}
+
+.contact-links a {
+    display: block;
+    color: #dddddd;
+    margin-bottom: 18px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    color: #e1ae63;
+}
+
+.contact-links strong {
+    color: #e1ae63;
     display: inline-block;
-    margin-bottom: 35px;
-    word-break: break-word;
+    min-width: 100px;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 
 /* =========================
@@ -440,41 +430,37 @@ section {
 ========================= */
 
 footer {
-    padding: 30px 8%;
-    border-top: 1px solid var(--border);
+    border-top: 1px solid #292929;
+    padding: 30px 7.5%;
     display: flex;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
-    color: #777;
+    color: #777777;
     font-size: 12px;
 }
 
 footer span {
-    color: var(--gold);
+    color: #e1ae63;
 }
 
 /* =========================
    RESPONSIVE
 ========================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
     nav {
         padding: 0 5%;
     }
 
-    .nav-links {
-        gap: 18px;
-    }
-
     .hero-grid {
         grid-template-columns: 1fr;
-        gap: 50px;
+        gap: 55px;
     }
 
     .hero {
-        padding: 70px 0 90px;
+        padding-top: 65px;
     }
 
     .hero-content {
@@ -490,41 +476,59 @@ footer span {
         justify-content: center;
     }
 
-    .hero-portrait {
+    .hero-visual {
         min-height: auto;
     }
 
-    .portrait-frame {
-        width: min(100%, 400px);
+    .portrait-tag {
+        left: 0;
     }
 
-    .about-grid {
+    .about-grid,
+    .contact-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 45px;
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-details,
+    .contact-links {
+        padding-left: 25px;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 
     nav {
         height: auto;
-        padding: 22px 5%;
-        flex-direction: column;
-        gap: 18px;
+        padding: 25px 5%;
+        align-items: flex-start;
+        gap: 20px;
     }
 
     .nav-links {
-        gap: 18px;
+        gap: 15px;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-end;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .hero {
+        padding: 55px 0 70px;
     }
 
     .hero h1 {
-        font-size: 43px;
+        font-size: 42px;
         letter-spacing: -1px;
     }
 
-    .eyebrow {
+    .hero-label {
         font-size: 10px;
         letter-spacing: 2px;
     }
@@ -533,36 +537,66 @@ footer span {
         font-size: 14px;
     }
 
-    .portrait-frame::before {
-        top: 12px;
-        left: 12px;
+    .hero-visual {
+        margin-top: 10px;
     }
 
-    .portrait-caption {
-        left: 0;
-        bottom: 10px;
+    .portrait-frame {
+        width: 85%;
+    }
+
+    .portrait-frame img {
+        height: auto;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+    }
+
+    .portrait-frame::before {
+        inset: 12px -12px -12px 12px;
+    }
+
+    .portrait-tag {
+        left: -5px;
+        bottom: 20px;
+        padding: 12px;
+        min-width: 185px;
+    }
+
+    .portrait-tag strong {
+        font-size: 10px;
     }
 
     section {
-        padding: 75px 0;
+        padding: 70px 0;
     }
 
-    .services-grid,
-    .work-grid {
+    .section-title {
+        font-size: 34px;
+    }
+
+    .work-grid,
+    .process-grid {
         grid-template-columns: 1fr;
+        margin-top: 35px;
     }
 
-    .service-card,
     .work-card {
+        min-height: auto;
         padding: 28px;
+    }
+
+    .work-card h3 {
+        margin-top: 22px;
     }
 
     footer {
         padding: 25px 5%;
+        flex-direction: column;
         text-align: center;
-        justify-content: center;
     }
+
 }
+
 </style>
 </head>
 
@@ -573,6 +607,7 @@ footer span {
 ========================= -->
 
 <nav>
+
     <a href="#home" class="logo">
         MOSTAFA<span>.</span>
     </a>
@@ -583,300 +618,542 @@ footer span {
         <li><a href="#services">SERVICES</a></li>
         <li><a href="#contact">CONTACT</a></li>
     </ul>
+
 </nav>
 
+
 <!-- =========================
-     HERO
+     HERO SECTION
 ========================= -->
 
 <section class="hero" id="home">
-    <div class="container hero-grid">
 
-        <!-- LEFT: TEXT -->
+    <div class="container">
 
-        <div class="hero-content">
+        <div class="hero-grid">
 
-            <div class="eyebrow">
-                AI CONTENT CREATOR • VISUAL STORYTELLER
-            </div>
+            <div class="hero-content">
 
-            <h1>
-                STORIES THAT<br>
-                <span>LOOK ALIVE.</span>
-            </h1>
+                <div class="hero-label">
+                    AI CONTENT CREATOR • VISUAL STORYTELLER
+                </div>
 
-            <p class="hero-description">
-                I create cinematic AI-generated videos,
-                compelling narratives, and premium commercial
-                advertising experiences for modern brands.
-            </p>
+                <h1>
+                    STORIES THAT<br>
+                    <span>LOOK ALIVE.</span>
+                </h1>
 
-            <div class="hero-buttons">
-                <a href="#work" class="btn btn-primary">
-                    EXPLORE MY WORK →
-                </a>
+                <p class="hero-description">
+                    I create cinematic AI-generated videos,
+                    compelling narratives, and premium
+                    commercial advertising experiences
+                    for modern brands.
+                </p>
 
-                <a href="#contact" class="btn btn-outline">
-                    LET'S CREATE
-                </a>
-            </div>
+                <div class="hero-buttons">
 
-        </div>
+                    <a href="#work" class="btn btn-primary">
+                        EXPLORE MY WORK →
+                    </a>
 
-        <!-- RIGHT: PREMIUM PORTRAIT -->
+                    <a href="#contact" class="btn btn-outline">
+                        LET'S CREATE
+                    </a>
 
-        <div class="hero-portrait">
-
-            <div class="portrait-frame">
-
-                <!--
-                IMPORTANT:
-                Upload profile.png to the same folder
-                as this index.html file.
-                -->
-
-                <img
-                    src="profile.png"
-                    alt="Mostafa Kamal — AI Content Creator"
-                >
+                </div>
 
             </div>
 
-            <div class="portrait-caption">
-                <strong>MOSTAFA KAMAL</strong>
-                <small>AI CREATOR / VISUAL STORYTELLER</small>
+
+            <!-- PREMIUM CREATOR PORTRAIT -->
+
+            <div class="hero-visual">
+
+                <div class="portrait-frame">
+
+                    <!-- YOUR PORTRAIT IMAGE -->
+                    <img
+                        src="hero-portait.png"
+                        alt="Mostafa Kamal — AI Content Creator"
+                    >
+
+                    <div class="portrait-tag">
+
+                        <strong>MOSTAFA KAMAL</strong>
+
+                        <small>
+                            AI CREATOR / VISUAL STORYTELLER
+                        </small>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
 
     </div>
+
 </section>
 
+
 <!-- =========================
-     ABOUT
+     ABOUT SECTION
 ========================= -->
 
 <section id="about">
-    <div class="container about-grid">
 
-        <div>
-            <div class="section-label">01 — ABOUT ME</div>
-
-            <h2 class="section-title">
-                IMAGINATION<br>
-                MEETS VISUAL<br>
-                INNOVATION.
-            </h2>
-        </div>
-
-        <div class="about-text">
-
-            <p>
-                I am Mostafa Kamal, a creative and detail-oriented
-                AI Content Creator and Visual Storyteller with a
-                background in Civil Engineering.
-            </p>
-
-            <p>
-                My work combines scriptwriting, cinematic
-                storytelling, AI-generated video production,
-                visual direction, and commercial advertising.
-            </p>
-
-            <p>
-                I turn ideas into engaging visual experiences
-                designed to connect with audiences and brands.
-            </p>
-
-            <div class="about-facts">
-
-                <div class="fact">
-                    <h3>Focus</h3>
-                    <p>AI Video • Storytelling • Advertising</p>
-                </div>
-
-                <div class="fact">
-                    <h3>Creative Approach</h3>
-                    <p>Story-first. Visual-driven. Detail-focused.</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<!-- =========================
-     SERVICES
-========================= -->
-
-<section id="services">
     <div class="container">
 
-        <div class="section-label">02 — WHAT I DO</div>
+        <div class="about-grid">
 
-        <h2 class="section-title">
-            CREATIVE SERVICES<br>
-            FOR MODERN BRANDS.
-        </h2>
+            <div>
 
-        <p class="section-description">
-            From the first idea to the final cinematic frame,
-            I create visual content that communicates with
-            purpose and style.
-        </p>
+                <div class="section-label">
+                    ABOUT ME
+                </div>
 
-        <div class="services-grid">
+                <h2 class="section-title">
+                    CREATIVITY<br>
+                    <span>MEETS TECHNOLOGY.</span>
+                </h2>
 
-            <div class="service-card">
-                <div class="service-number">01 /</div>
-                <h3>AI Commercial Video</h3>
-                <p>
-                    Premium AI-generated product advertisements,
-                    cinematic brand campaigns, and visual
-                    storytelling for commercial content.
-                </p>
             </div>
 
-            <div class="service-card">
-                <div class="service-number">02 /</div>
-                <h3>Scriptwriting & Storytelling</h3>
+            <div class="about-text">
+
                 <p>
-                    Original concepts, screenplay development,
-                    scene structure, dialogue, and audience-focused
-                    narratives.
+                    I am Mostafa Kamal, a creative content creator
+                    and visual storyteller focused on AI-generated
+                    videos, scriptwriting, and cinematic storytelling.
                 </p>
+
+                <p>
+                    I transform ideas into meaningful visual
+                    experiences through creative direction,
+                    storytelling, and modern AI tools.
+                </p>
+
+                <p>
+                    My work combines imagination, technology,
+                    and visual communication to create content
+                    that connects with audiences.
+                </p>
+
             </div>
 
-            <div class="service-card">
-                <div class="service-number">03 /</div>
-                <h3>Visual Direction</h3>
+        </div>
+
+        <div class="about-details" style="margin-top:55px;">
+
+            <div class="detail">
+
+                <h4>BACKGROUND</h4>
+
                 <p>
-                    Cinematic shot planning, camera direction,
-                    lighting concepts, mood, composition, and
-                    visual communication.
+                    Bachelor of Science in Civil Engineering
                 </p>
+
             </div>
 
-            <div class="service-card">
-                <div class="service-number">04 /</div>
-                <h3>Fashion & Brand Films</h3>
+            <div class="detail">
+
+                <h4>FOCUS</h4>
+
                 <p>
-                    Premium fashion films, product-focused videos,
-                    social media advertisements, and creative
-                    visual campaigns.
+                    AI Video Creation • Scriptwriting •
+                    Visual Storytelling • Commercial Advertising
                 </p>
+
+            </div>
+
+            <div class="detail">
+
+                <h4>LANGUAGES</h4>
+
+                <p>
+                    Bangla • English
+                </p>
+
             </div>
 
         </div>
 
     </div>
+
 </section>
 
+
 <!-- =========================
-     WORK
+     WORK SECTION
 ========================= -->
 
 <section id="work">
+
     <div class="container">
 
-        <div class="section-label">03 — SELECTED WORK</div>
+        <div class="section-label">
+            SELECTED WORK
+        </div>
 
         <h2 class="section-title">
             IDEAS INTO<br>
-            CINEMATIC EXPERIENCES.
+            <span>VISUAL EXPERIENCES.</span>
         </h2>
 
-        <p class="section-description">
+        <p class="section-intro">
             A selection of creative directions and visual
-            storytelling projects.
+            storytelling projects designed to bring concepts
+            to life.
         </p>
 
         <div class="work-grid">
 
             <div class="work-card">
-                <span>AI COMMERCIAL</span>
-                <h3>Premium Product Films</h3>
+
+                <div class="work-number">01 / FASHION</div>
+
+                <h3>Fashion Film</h3>
+
                 <p>
-                    Cinematic advertising built around product,
-                    atmosphere, and visual impact.
+                    Cinematic fashion storytelling featuring
+                    fabric, texture, movement, and cultural identity.
                 </p>
+
             </div>
 
-            <div class="work-card">
-                <span>FASHION FILM</span>
-                <h3>Heritage & Modernity</h3>
-                <p>
-                    Fashion storytelling inspired by texture,
-                    movement, and cultural identity.
-                </p>
-            </div>
 
             <div class="work-card">
-                <span>SHORT FILM</span>
-                <h3>Stories That Matter</h3>
+
+                <div class="work-number">02 / PRODUCT</div>
+
+                <h3>Product Commercial</h3>
+
                 <p>
-                    Original narratives, emotional scenes,
-                    and meaningful visual storytelling.
+                    Premium AI-generated product advertisements
+                    built around cinematic visuals and storytelling.
                 </p>
+
             </div>
 
+
             <div class="work-card">
-                <span>VISUAL DIRECTION</span>
-                <h3>From Concept to Frame</h3>
+
+                <div class="work-number">03 / BRAND</div>
+
+                <h3>Brand Storytelling</h3>
+
                 <p>
-                    Creative direction, shot planning,
-                    cinematic composition, and AI production.
+                    Creative visual narratives that communicate
+                    brand identity, emotion, and purpose.
                 </p>
+
+            </div>
+
+
+            <div class="work-card">
+
+                <div class="work-number">04 / SOCIAL MEDIA</div>
+
+                <h3>Social Content</h3>
+
+                <p>
+                    Engaging short-form video concepts for
+                    modern digital audiences and social platforms.
+                </p>
+
             </div>
 
         </div>
 
     </div>
+
 </section>
+
 
 <!-- =========================
-     CONTACT
+     SERVICES SECTION
 ========================= -->
 
-<section id="contact" class="contact">
+<section id="services">
+
     <div class="container">
 
-        <div class="section-label">04 — CONTACT</div>
+        <div class="section-label">
+            WHAT I DO
+        </div>
 
         <h2 class="section-title">
-            LET'S CREATE<br>
-            SOMETHING GREAT.
+            CREATIVE SERVICES<br>
+            <span>BUILT FOR IMPACT.</span>
         </h2>
 
-        <p class="section-description">
-            Have a story, product, or brand idea?
-            Let's turn it into a cinematic visual experience.
+        <p class="section-intro">
+            From the first idea to the final cinematic video,
+            I help turn creative concepts into visual content.
         </p>
 
-        <!-- Replace with your actual email -->
-        <a
-            href="mailto:your-email@example.com"
-            class="contact-email"
-        >
-            your-email@example.com
-        </a>
+        <div class="work-grid">
 
-        <br>
+            <div class="work-card">
 
-        <a href="#home" class="btn btn-primary">
-            BACK TO TOP ↑
-        </a>
+                <div class="work-number">01</div>
+
+                <h3>AI Video Creation</h3>
+
+                <p>
+                    AI-generated cinematic videos, short films,
+                    storytelling content, and visual concepts.
+                </p>
+
+            </div>
+
+
+            <div class="work-card">
+
+                <div class="work-number">02</div>
+
+                <h3>Scriptwriting</h3>
+
+                <p>
+                    Creative scripts, scene development,
+                    dialogue writing, and structured narratives.
+                </p>
+
+            </div>
+
+
+            <div class="work-card">
+
+                <div class="work-number">03</div>
+
+                <h3>Visual Direction</h3>
+
+                <p>
+                    Shot planning, camera direction,
+                    cinematic composition, and visual mood.
+                </p>
+
+            </div>
+
+
+            <div class="work-card">
+
+                <div class="work-number">04</div>
+
+                <h3>Commercial Advertising</h3>
+
+                <p>
+                    Product-focused AI advertising videos
+                    designed for brands and digital campaigns.
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
+
 </section>
+
+
+<!-- =========================
+     PROCESS SECTION
+========================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-label">
+            MY PROCESS
+        </div>
+
+        <h2 class="section-title">
+            FROM IDEA TO<br>
+            <span>FINAL CREATION.</span>
+        </h2>
+
+        <div class="process-grid">
+
+            <div class="process-card">
+
+                <span>01 / DISCOVER</span>
+
+                <h3>IDEA</h3>
+
+                <p>
+                    Understand the concept, message,
+                    audience, and creative direction.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <span>02 / CREATE</span>
+
+                <h3>AI GENERATION</h3>
+
+                <p>
+                    Develop cinematic visuals and
+                    AI-generated video sequences.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <span>03 / REFINE</span>
+
+                <h3>CINEMATIC EDITING</h3>
+
+                <p>
+                    Shape the story through pacing,
+                    sound, visual flow, and editing.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <span>04 / DELIVER</span>
+
+                <h3>FINAL COMMERCIAL</h3>
+
+                <p>
+                    Deliver a polished visual experience
+                    ready for digital platforms.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT SECTION
+========================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="container">
+
+        <div class="contact-grid">
+
+            <div class="contact-text">
+
+                <div class="section-label">
+                    LET'S WORK TOGETHER
+                </div>
+
+                <h2 class="section-title">
+                    HAVE AN IDEA?<br>
+                    <span>LET'S CREATE.</span>
+                </h2>
+
+                <p>
+                    Have a product, brand, or story that deserves
+                    a cinematic visual experience? Let's bring
+                    your idea to life.
+                </p>
+
+                <div style="margin-top:30px;">
+
+                    <a
+                        href="https://wa.me/8801834546654"
+                        target="_blank"
+                        class="btn btn-primary"
+                    >
+                        CONTACT ON WHATSAPP →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-links">
+
+                <a href="mailto:your-email@example.com">
+
+                    <strong>EMAIL</strong>
+
+                    your-email@example.com
+
+                </a>
+
+
+                <a
+                    href="https://wa.me/8801834546654"
+                    target="_blank"
+                >
+
+                    <strong>WHATSAPP</strong>
+
+                    Let's Talk
+
+                </a>
+
+
+                <a
+                    href="https://www.linkedin.com/in/faridi-mostafa97"
+                    target="_blank"
+                >
+
+                    <strong>LINKEDIN</strong>
+
+                    Professional Profile
+
+                </a>
+
+
+                <a
+                    href="https://www.fiverr.com/mostafakamalbm"
+                    target="_blank"
+                >
+
+                    <strong>FIVERR</strong>
+
+                    My Services
+
+                </a>
+
+
+                <a
+                    href="https://www.facebook.com/share/18yDNGiE7P/"
+                    target="_blank"
+                >
+
+                    <strong>FACEBOOK</strong>
+
+                    Connect With Me
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 
 <!-- =========================
      FOOTER
 ========================= -->
 
 <footer>
+
     <div>
         © 2026 Mostafa Kamal. All Rights Reserved.
     </div>
@@ -884,7 +1161,9 @@ footer span {
     <div>
         AI CONTENT CREATOR <span>•</span> VISUAL STORYTELLER
     </div>
+
 </footer>
+
 
 </body>
 </html>
