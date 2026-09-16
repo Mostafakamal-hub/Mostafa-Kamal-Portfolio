@@ -2,41 +2,386 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mostafa Kamal | AI Content Creator</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mostafa Kamal | AI Visual Storyteller</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0b0b;
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+  border-bottom: 1px solid #292929;
+  position: sticky;
+  top: 0;
+  background: #0b0b0bee;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.logo span {
+  color: #d6a86b;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #d6a86b;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 8%;
+  background:
+    radial-gradient(circle at 80% 30%, #30251655, transparent 35%);
+}
+
+.tag {
+  color: #d6a86b;
+  letter-spacing: 4px;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: clamp(42px, 7vw, 88px);
+  line-height: 1.08;
+  max-width: 950px;
+  letter-spacing: -2px;
+}
+
+h1 span {
+  color: #d6a86b;
+}
+
+.hero p {
+  max-width: 600px;
+  color: #aaa;
+  font-size: 17px;
+  margin-top: 25px;
+}
+
+.btn {
+  display: inline-block;
+  width: fit-content;
+  background: #d6a86b;
+  color: #111;
+  padding: 14px 28px;
+  margin-top: 35px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+}
+
+section {
+  padding: 90px 8%;
+}
+
+.section-label {
+  color: #d6a86b;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 42px;
+  margin-bottom: 25px;
+}
+
+.about {
+  max-width: 850px;
+}
+
+.about p {
+  color: #aaa;
+  font-size: 18px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.project {
+  background: #171717;
+  border: 1px solid #292929;
+  padding: 30px;
+  min-height: 190px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  border-color: #d6a86b;
+  transform: translateY(-5px);
+}
+
+.project-number {
+  color: #777;
+  font-size: 13px;
+}
+
+.project h3 {
+  color: #d6a86b;
+  margin: 15px 0;
+  font-size: 22px;
+}
+
+.project p {
+  color: #aaa;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 35px;
+}
+
+.service {
+  padding: 25px;
+  border-left: 2px solid #d6a86b;
+  background: #121212;
+}
+
+.service h3 {
+  margin-bottom: 8px;
+}
+
+.service p {
+  color: #aaa;
+}
+
+.contact {
+  background: #15120e;
+  text-align: center;
+}
+
+.contact p {
+  color: #aaa;
+  max-width: 600px;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+  border-top: 1px solid #292929;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 0 8px;
+  }
+
+  .hero {
+    padding: 75px 7%;
+  }
+
+  section {
+    padding: 65px 7%;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+}
+</style>
 </head>
+
 <body>
 
-  <h1>Mostafa Kamal</h1>
+<nav>
+  <div class="logo">MOSTAFA<span>.</span></div>
 
-  <h2>AI Content Creator & Visual Storyteller</h2>
+  <div>
+    <a href="#about">ABOUT</a>
+    <a href="#work">WORK</a>
+    <a href="#services">SERVICES</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="tag">AI CONTENT CREATOR • VISUAL STORYTELLER</div>
+
+  <h1>
+    STORIES THAT<br>
+    <span>LOOK ALIVE.</span>
+  </h1>
 
   <p>
-    I create cinematic stories, AI-generated videos,
-    and premium commercial advertising experiences.
+    I create cinematic AI-generated videos, compelling narratives,
+    and premium commercial advertising experiences for modern brands.
   </p>
 
-  <h2>About Me</h2>
+  <a href="#work" class="btn">EXPLORE MY WORK →</a>
+</section>
+
+<section id="about">
+  <div class="section-label">01 / ABOUT ME</div>
+
+  <h2>Creative Vision.<br>Visual Impact.</h2>
+
+  <div class="about">
+    <p>
+      I am Mostafa Kamal, a creative and detail-oriented
+      AI Content Creator and Visual Storyteller with a
+      background in Civil Engineering.
+    </p>
+
+    <p style="margin-top:18px;">
+      My work combines scriptwriting, screenplay development,
+      AI-generated video production, visual direction,
+      and cinematic storytelling to transform ideas into
+      meaningful visual experiences.
+    </p>
+  </div>
+</section>
+
+<section id="work">
+  <div class="section-label">02 / SELECTED WORK</div>
+
+  <h2>My Creative Projects</h2>
+
+  <div class="projects">
+
+    <div class="project">
+      <div class="project-number">PROJECT 01</div>
+      <h3>AI Commercial Video</h3>
+      <p>
+        Product-focused cinematic advertising designed
+        to communicate brand identity and impact.
+      </p>
+    </div>
+
+    <div class="project">
+      <div class="project-number">PROJECT 02</div>
+      <h3>Fashion Film</h3>
+      <p>
+        Visual storytelling through fabric, movement,
+        culture, texture and cinematic direction.
+      </p>
+    </div>
+
+    <div class="project">
+      <div class="project-number">PROJECT 03</div>
+      <h3>Short Film</h3>
+      <p>
+        Emotional narratives, character-driven stories
+        and cinematic visual experiences.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-label">03 / WHAT I DO</div>
+
+  <h2>Creative Services</h2>
+
+  <div class="services">
+
+    <div class="service">
+      <h3>AI Video Creation</h3>
+      <p>
+        Cinematic AI videos for brands, products and storytelling.
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>Scriptwriting</h3>
+      <p>
+        Creative concepts, screenplay development and dialogue.
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>Visual Direction</h3>
+      <p>
+        Shot planning, cinematic composition and visual storytelling.
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>Commercial Advertising</h3>
+      <p>
+        Premium AI-powered advertising concepts and video campaigns.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="section-label">04 / LET'S CONNECT</div>
+
+  <h2>Have an idea?</h2>
 
   <p>
-    I am Mostafa Kamal, a creative content creator
-    passionate about AI video production, scriptwriting,
-    visual storytelling and commercial advertising.
+    Let's turn your vision into a cinematic experience.
+    Whether it's a product, brand or story,
+    I am ready to create.
   </p>
 
-  <h2>My Services</h2>
+  <a href="mailto:your@email.com" class="btn">
+    START A PROJECT →
+  </a>
+</section>
 
-  <ul>
-    <li>AI Commercial Video Creation</li>
-    <li>Scriptwriting & Storytelling</li>
-    <li>Fashion Film Production</li>
-    <li>Visual Direction</li>
-  </ul>
-
-  <h2>Contact</h2>
-
-  <p>Email: your@email.com</p>
+<footer>
+  © 2026 Mostafa Kamal. All rights reserved.
+</footer>
 
 </body>
 </html>
